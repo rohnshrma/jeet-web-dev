@@ -1,0 +1,213 @@
+<!-- Declares the document type as HTML5, informing browsers to render the page using HTML5 standards -->
+<!DOCTYPE html>
+
+<!-- The root element of the HTML document, enclosing all content -->
+<html>
+  <!-- The head section contains metadata, styles, and links to external resources -->
+  <head>
+    <!-- Sets the title of the webpage, displayed in the browser tab -->
+    <title>First Site</title>
+
+    <!-- Internal CSS styles defined within a <style> tag -->
+    <style>
+      /* Universal selector (*) applies styles to all elements  */
+      * {
+        /* Enables smooth scrolling for anchor links, improving user experience when navigating  */
+        scroll-behavior: smooth;
+      }
+      /* Styles applied to all <table> elements */
+      table {
+        /* Adds a 1rem bottom margin to tables for spacing  */
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+
+  <!-- The body section contains the visible content of the webpage -->
+  <body>
+    <!-- Unordered list (<ul>) for navigation links, typically used for menus -->
+    <ul>
+      <!-- List item (<li>) containing a navigation link -->
+      <li>
+        <!-- Anchor tag (<a>) creates a hyperlink to 'index.html' (likely the homepage) -->
+        <a href="index.html">HOME</a>
+      </li>
+      <li>
+        <!-- Link to 'about.html', another page in the site -->
+        <a href="about.html">ABOUT</a>
+      </li>
+      <li>
+        <!-- Link to an anchor point '#student_data' on the same page, jumps to the table with id="student_data" -->
+        <a href="#student_data">Data Table</a>
+      </li>
+    </ul>
+
+    <!-- Horizontal rule (<hr>) creates a thematic break or divider line -->
+    <hr />
+
+    <!-- Heading tags (<h1> to <h6>) define headings of decreasing importance/size -->
+    <h1>hello world</h1>
+    <!-- Largest heading -->
+    <h2>hello world</h2>
+    <h3>hello world</h3>
+    <h4>hello world</h4>
+    <h5>hello world</h5>
+    <h6>hello world</h6>
+    <!-- Smallest heading -->
+
+    <!-- Paragraph tag (<p>) for a block of text -->
+    <p>
+      <!-- Sample text with 'Lorem ipsum' placeholder content -->
+      hello world this is john doe Lorem, ipsum dolor sit amet consectetur
+      adipisicing elit. Consectetur, dicta reiciendis exercitationem facilis
+      necessitatibus laboriosam nam recusandae laborum non consequatur
+      distinctio magni unde blanditiis doloremque, corrupti impedit a maxime,
+      eligendi possimus adipisci! ...
+      <!-- Long placeholder text (shortened for brevity) demonstrates a large paragraph -->
+    </p>
+
+    <!-- Ordered list (<ol>) for a numbered/lettered list, 'reversed' displays items in reverse order, 'type="a"' uses lowercase letters -->
+    <ol reversed type="a">
+      <li>Apple</li>
+      <!-- Item a: Apple (due to reversed order) -->
+      <li>Banana</li>
+      <!-- Item b: Banana -->
+      <li>Cherry</li>
+      <!-- Item c: Cherry -->
+    </ol>
+
+    <!-- Unordered list (<ul>) for a bulleted list, 'type="disc"' specifies filled circle bullets -->
+    <ul type="disc">
+      <li>Apple</li>
+      <!-- Bullet point for Apple -->
+      <li>Banana</li>
+      <!-- Bullet point for Banana -->
+      <li>Cherry</li>
+      <!-- Bullet point for Cherry -->
+    </ul>
+
+    <!-- Description list (<dl>) for terms and their descriptions -->
+    <dl>
+      <dt>Apple</dt>
+      <!-- Description term: Apple -->
+      <dd>Red in color</dd>
+      <!-- Description detail: describes Apple -->
+      <dt>Banana</dt>
+      <!-- Description term: Banana -->
+      <dd>Yellow in color</dd>
+      <!-- Description detail: describes Banana -->
+      <dt>Apple</dt>
+      <!-- Repeated term (not ideal, but valid) -->
+      <dd>Red in color</dd>
+      <dt>Banana</dt>
+      <!-- Repeated term -->
+      <dd>Yellow in color</dd>
+    </dl>
+
+    <!-- Table element for tabular data, 'border="1"' adds a visible border (deprecated, better to use CSS) -->
+    <table border="1">
+      <!-- Table row (<tr>) defines a row in the table -->
+      <tr>
+        <!-- Table header (<th>) for column headings, bold and centered by default -->
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+      </tr>
+      <tr>
+        <!-- Table data (<td>) for cell content -->
+        <td>Jeet</td>
+        <td>26</td>
+        <td>Male</td>
+      </tr>
+      <tr>
+        <td>Rohan</td>
+        <td>28</td>
+        <td>Male</td>
+      </tr>
+    </table>
+
+    <!-- Another table with an ID for anchor linking, 'border="1"' for visible borders -->
+    <table border="1" id="student_data">
+      <tr>
+        <!-- 'colspan="3"' makes the header span all three columns -->
+        <th colspan="3">Student Data</th>
+      </tr>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+      </tr>
+      <tr>
+        <td>Jeet</td>
+        <td>26</td>
+        <td>Male</td>
+      </tr>
+      <tr>
+        <td>Rohan</td>
+        <td>28</td>
+        <td>Male</td>
+      </tr>
+    </table>
+
+    <!-- Table with mixed headers and data, using 'rowspan' for multi-row cells -->
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <td>John</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>23</td>
+      </tr>
+      <tr>
+        <th>Gender</th>
+        <td>Male</td>
+      </tr>
+      <tr>
+        <!-- 'rowspan="2"' makes 'Details' span two rows -->
+        <th rowspan="2">Details</th>
+        <td>9876545673</td>
+      </tr>
+      <tr>
+        <td>john@email.com</td>
+      </tr>
+    </table>
+
+    <!-- Image tag (<img>) for embedding images, self-closing tag -->
+    <!-- 'width="400px"' sets image width, 'src' specifies the image URL, 'alt' provides alternative text for accessibility -->
+    <img
+      width="400px"
+      src="https://cdn.britannica.com/20/93520-050-3E663489/Puma.jpg"
+      alt="puma cat"
+    />
+    <!-- Local image reference (relative path), assumes 'puma.jpeg' is in an 'images' folder -->
+    <img width="400px" src="./images/puma.jpeg" alt="puma cat" />
+
+    <!-- Anchor tag (<a>) for external hyperlink to Google -->
+    <a href="https://www.google.com"> Google </a>
+
+    <!-- Anchor tag wrapping a heading, links to Goibibo website -->
+    <a href="https://www.goibibo.com">
+      <h1>Take me to goibibo</h1>
+    </a>
+
+    <!-- Another external link to Google (repeated for demonstration) -->
+    <a href="https://www.google.com"> Google </a>
+
+    <!-- Telephone link, 'tel:' protocol triggers a call on devices -->
+    <a href="tel:+918130363768">Call Me</a>
+
+    <!-- Email link, 'mailto:' protocol opens the user's email client -->
+    <a href="mailto:jeetsoni@email.com">
+      <button>Email Me</button>
+      <!-- Button inside anchor for styling the link -->
+    </a>
+
+    <!-- WhatsApp link, uses WhatsApp API to initiate a chat -->
+    <a
+      href="https://api.whatsapp.com/send/?phone=%2B918130363768&text&type=phone_number&app_absent=0"
+    >
+      whatsapp me
+    </a>
+  </body>
+</html>
