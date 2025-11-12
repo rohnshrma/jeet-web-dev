@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>First HTML Site</title>
+    <style>
+      div {
+        background-color: thistle;
+        padding: 2rem;
+        margin: 2rem;
+      }
+      form div {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <ul>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+
+    <!-- main section -->
+    <div id="main">
+      <h1>WEBIGEEKS</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit eos
+        vitae aperiam debitis, nobis similique!
+      </p>
+      <a href="tel:+918766367815">
+        <button>Call me</button>
+      </a>
+    </div>
+
+    <!-- about section -->
+    <div id="about">
+      <img
+        src="https://imageio.forbes.com/specials-images/imageserve/6243de8bd02f6147cdc7b3b0/Man-working-at-desk-encounters-co-worker-/960x0.png?format=png&width=960"
+        alt="webigeeks"
+        width="200px"
+      />
+      <h2>WHO AM I ?</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam corporis
+        tempore esse consequatur temporibus repellat unde minus architecto
+        magnam laudantium.<a href="about.html">Read More...</a>
+      </p>
+    </div>
+    <!-- skills section -->
+    <div id="skills">
+      <h2>What i know ?</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ipsa?</p>
+      <table border="1">
+        <tr>
+          <th colspan="2">My Skills</th>
+        </tr>
+        <tr>
+          <th>Skill</th>
+          <th>Experience</th>
+        </tr>
+        <tr>
+          <th>HTML</th>
+          <td>7 Years</td>
+        </tr>
+        <tr>
+          <th>CSS</th>
+          <td>7 Years</td>
+        </tr>
+        <tr>
+          <th>Javascript</th>
+          <td>7 Years</td>
+        </tr>
+      </table>
+    </div>
+    <!-- contact section -->
+    <div id="contact">
+      <h2>Get In Touch</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia,
+        quisquam!
+      </p>
+      <form>
+        <div>
+          <label for="fName">Your Name : </label>
+          <input
+            type="text"
+            name="full_name"
+            id="fName"
+            placeholder="Enter your name..."
+          />
+        </div>
+        <div>
+          <label for="e_add">Email Address : </label>
+          <input
+            type="email"
+            name="email_address"
+            id="e_add"
+            placeholder="Enter your email..."
+          />
+        </div>
+        <div>
+          <label for="ph">Mobile Number : </label>
+          <input
+            type="tel"
+            name="mobile"
+            id="ph"
+            placeholder="Enter mobile number..."
+          />
+        </div>
+        <button type="submit">SUBMIT</button>
+      </form>
+
+      <hr />
+
+      <a href="tel:+918766367815"><button>PHONE</button></a>
+      <a href="mailto:webigeeksofficial@gmail.com"><button>EMAIL</button></a>
+      <a
+        href="https://api.whatsapp.com/send/?phone=%2B918766367815&text&type=phone_number&app_absent=0"
+        ><button>WHATSAPP</button></a
+      >
+    </div>
+  </body>
+</html>
