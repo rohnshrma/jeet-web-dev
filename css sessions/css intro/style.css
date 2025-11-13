@@ -1,7 +1,23 @@
-.para {
-  border: 2px solid black;
+h1 {
+  /* text color */
+  color: red;
+  /* font family */
+  font-family: Arial, Helvetica, sans-serif;
+  /* text boldness : (100-900); */
+  font-weight: 500;
+  /* letter spacing */
+  letter-spacing: 10px;
+  /* text size */
+  font-size: 60px;
+  /* text-shadow : x-axis, y-axis, blur radius , color */
+  text-shadow: -10px -10px 4px black;
+  /* text style */
+  font-style: italic;
 }
 
-#main {
-  background-color: grey;
+p {
+  /* text-alignment : center | left (default) | right | justify */
+  text-align: justify;
+  /* line height (default 1.15) */
+  line-height: 1.15;
 }
