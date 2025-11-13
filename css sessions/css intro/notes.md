@@ -40,6 +40,8 @@ applied by creating a "style" tag in head tag, selecting and styling futher
 
 applied by linking an external ".css" file using the link tag in head
 
+`HTML CODE`
+
 ```html
 <head>
   <link rel="stylesheet" href="style.css" />
@@ -52,6 +54,8 @@ applied by linking an external ".css" file using the link tag in head
 - `href` : http references (link or path to css file)
 
 ---
+
+`CSS CODE`
 
 ```css
 #main {
