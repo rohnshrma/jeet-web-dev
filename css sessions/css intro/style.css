@@ -1,5 +1,7 @@
+.para {
+  border: 2px solid black;
+}
+
 #main {
-  background-color: thistle;
-  color: #fff;
-  padding: 2rem;
+  background-color: grey;
 }

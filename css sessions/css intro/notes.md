@@ -64,3 +64,60 @@ applied by linking an external ".css" file using the link tag in head
   padding: 2rem;
 }
 ```
+
+---
+
+## Types of Selectors
+
+- `*` `all selector`: Selects every element in HTML.
+- `tag name`: Selects elements by their tag name, e.g., `h1`, `p`, `a`.
+- `#id` `id selector`: Selects an element by its unique `id`, using `#`.
+- `.class` `class selector`: Selects elements by their shareable `class`, using `.`.
+
+`*` `All Selector`
+
+```css
+* {
+  color: red;
+}
+```
+
+`tag name`
+
+```css
+h1 {
+  border: 1px solid salmon;
+}
+```
+
+`.` `class selector`
+
+```css
+.para {
+  border: 2px solid black;
+}
+```
+
+`#` `id selector`
+
+```css
+#main {
+  background-color: grey;
+}
+```
+
+---
+
+## ID vs Class
+
+The `id` and `class` selectors are used to target specific elements in CSS, but they differ in their purpose and usage. The table below summarizes their key differences:
+
+| Feature         | `id` Selector                                          | `class` Selector                                                 |
+| --------------- | ------------------------------------------------------ | ---------------------------------------------------------------- |
+| **Syntax**      | Uses `#` (e.g., `#main`)                               | Uses `.` (e.g., `.highlight`)                                    |
+| **Uniqueness**  | Must be unique per HTML page                           | Can be reused on multiple elements                               |
+| **Purpose**     | Targets a single, specific element                     | Targets multiple elements for shared styling                     |
+| **Specificity** | Higher specificity in CSS                              | Lower specificity than `id`                                      |
+| **Example**     | `<div id="main">` styled with `#main { color: blue; }` | `<p class="highlight">` styled with `.highlight { color: red; }` |
+
+- **Note**: Use `id` for unique elements like a specific section or container. Use `class` for reusable styles across multiple elements, such as buttons or text highlights.
