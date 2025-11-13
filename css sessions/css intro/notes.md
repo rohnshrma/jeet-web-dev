@@ -1,7 +1,7 @@
 _css : cascading style sheet_
 
 - `inline` : applied on the html tag itself using the "style" attribute
-- `internal` : applied by creating a "style" tag in head tag, selecting and styling futher
+- `internal` : applied by creating a "style" tag in head tag, selecting and styling further
 - `external` : applied by linking an external ".css" file using the link tag in head
 
 ## inline css
@@ -51,7 +51,7 @@ applied by linking an external ".css" file using the link tag in head
 ---
 
 - `rel` : tells html what kind of relationship the file shares with the html file
-- `href` : http references (link or path to css file)
+- `href` : hypertext references (link or path to css file)
 
 ---
 
