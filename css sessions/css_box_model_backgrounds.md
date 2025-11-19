@@ -1,17 +1,17 @@
 # CSS Box Model & Backgrounds
 
-Quick beginner notes + copy/paste snippets for the box model and popular background tricks.
+Simple Indian-English notes plus copy/paste snippets for the box model and the most-used background properties.
 
 ---
 
 ## 1. Box Model Basics
-Every element is a rectangle with `content`, `padding`, `border`, and `margin`.
+Think of every element as a dabba (box) made of four layers: `content`, `padding`, `border`, and `margin`.
 
 **HTML**
 ```html
 <section class="box-demo">
   <h2>Box Model</h2>
-  <p>Padding adds space *inside* the border, margin adds space *outside*.</p>
+  <p>Padding adds space inside the border, margin adds space outside.</p>
 </section>
 ```
 
@@ -27,10 +27,10 @@ Every element is a rectangle with `content`, `padding`, `border`, and `margin`.
 }
 ```
 
-- `width/height`: size of the content box.
-- `padding`: inside spacing.
-- `border`: outline around padding.
-- `margin`: outside spacing.
+- `width/height`: size of the content area only.
+- `padding`: inside spacing that pushes text away from the border.
+- `border`: outline around the padding.
+- `margin`: outside spacing that keeps distance from other elements.
 
 ---
 
@@ -53,8 +53,8 @@ Fills the content + padding area with a solid color.
 
 ---
 
-## 3. `background-image` / `background-repeat`
-`background-image` loads the picture, `background-repeat` controls tiling (`repeat`, `repeat-x`, `repeat-y`, `no-repeat`).
+## 3. `background-image` + `background-repeat`
+`background-image` loads the picture. `background-repeat` says if the picture should tile (`repeat`, `repeat-x`, `repeat-y`, or `no-repeat`).
 
 **HTML**
 ```html
@@ -74,7 +74,7 @@ Fills the content + padding area with a solid color.
 ---
 
 ## 4. `background-position`
-Moves the image within the box. Use keywords (`top`, `center`, etc.) or pixel offsets.
+Moves the picture inside the box. Use keywords like `top`, `center`, `bottom`, `left`, `right` or give exact pixel values.
 
 **HTML**
 ```html
@@ -96,10 +96,10 @@ Moves the image within the box. Use keywords (`top`, `center`, etc.) or pixel of
 ---
 
 ## 5. `background-size`
-Controls how large the background image is drawn:
-- `cover`: fills the box (may crop).
-- `contain`: shows entire image (may letterbox).
-- Exact sizes like `200px` also work.
+Controls how large the picture should be drawn:
+- `cover`: fill the whole box (extra parts get cropped).
+- `contain`: show the full picture (empty gaps may appear).
+- Exact sizes: `200px`, `50% 100%`, etc.
 
 **HTML**
 ```html
@@ -123,7 +123,7 @@ Controls how large the background image is drawn:
 ---
 
 ## 6. Linear Gradients
-`linear-gradient()` draws a smooth color blend like an image.
+`linear-gradient()` behaves like an image created from colors. You can set the angle and list of colors.
 
 **HTML**
 ```html
@@ -142,7 +142,7 @@ Controls how large the background image is drawn:
 
 ---
 
-## 7. Background Image from URL (with fallback color)
+## 7. Background URL with fallback color
 
 **HTML**
 ```html
@@ -165,7 +165,7 @@ Controls how large the background image is drawn:
 ---
 
 ## Practice Tips
-- Use dev tools to toggle padding/border/margin and watch the box change.
-- Layer properties: color + image + gradients work together.
-- Try different sizes/positions to see how `cover`, `contain`, and `no-repeat` behave.
+- Use browser dev tools to toggle padding/border/margin and watch the box change live.
+- Combine properties: solid color + image + gradient can all stack together.
+- Play with different sizes/positions to see how `cover`, `contain`, `repeat`, and `no-repeat` react.
 
