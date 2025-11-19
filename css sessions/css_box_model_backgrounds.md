@@ -32,6 +32,49 @@ Think of every element as a dabba (box) made of four layers: `content`, `padding
 - `border`: outline around the padding.
 - `margin`: outside spacing that keeps distance from other elements.
 
+### Padding, Border, Margin Examples
+Below example shows the difference plus both long-hand and shorthand syntax.
+
+**HTML**
+```html
+<div class="spacing-demo">
+  <p>Look at the gap inside (padding) and outside (margin).</p>
+</div>
+```
+
+**CSS**
+```css
+/* Long-hand values for each side */
+.spacing-demo {
+  padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+
+  margin-top: 15px;
+  margin-right: 40px;
+  margin-bottom: 15px;
+  margin-left: 40px;
+
+  border-top: 3px solid #f3722c;
+  border-right: 3px dashed #f3722c;
+  border-bottom: 3px solid #f3722c;
+  border-left: 3px dashed #f3722c;
+}
+
+/* Same thing using shorthand */
+.spacing-demo {
+  padding: 20px 30px 10px 30px; /* top right bottom left */
+  margin: 15px 40px;            /* top/bottom, left/right */
+  border: 3px solid #f3722c;    /* width style color */
+  border-style: solid dashed;   /* top/bottom solid, left/right dashed */
+}
+```
+
+- Shorthand order always goes `top right bottom left`.
+- Two-value shorthand means `top/bottom`, `left/right` (e.g., `margin: 15px 40px`).
+- `border` shorthand packs `border-width border-style border-color`. Change any part later (`border-style`) to override specific sides.
+
 ---
 
 ## 2. `background-color`
