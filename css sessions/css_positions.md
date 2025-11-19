@@ -1,11 +1,11 @@
 # CSS Positioning Basics
 
-This guide explains every CSS `position` value with beginner-friendly language and tiny demo snippets. Each section provides the HTML to place on the page and a matching CSS snippet you can paste into a stylesheet or `<style>` tag.
+Short notes for each CSS `position` type with tiny HTML + CSS blocks you can copy into any practice file.
 
 ---
 
 ## 1. `static` (default)
-Static is the browser’s normal document flow. Elements appear one after another and ignore top/left offsets.
+Static is the normal page flow. Items sit one after another and ignore top/left values.
 
 **HTML**
 ```html
@@ -28,7 +28,7 @@ Static is the browser’s normal document flow. Elements appear one after anothe
 ---
 
 ## 2. `relative`
-Relative keeps the element in the flow but lets you nudge it with `top`, `left`, `right`, or `bottom`. Space is still reserved in its original spot.
+Relative keeps the element in flow but lets you nudge it using `top`, `left`, `right`, or `bottom`. The original space is still kept.
 
 **HTML**
 ```html
@@ -53,7 +53,7 @@ Relative keeps the element in the flow but lets you nudge it with `top`, `left`,
 ---
 
 ## 3. `absolute`
-Absolute pulls the element out of the normal flow and positions it relative to the nearest ancestor that has a `position` other than `static`. If no such ancestor exists, it uses the page (the viewport) as a reference.
+Absolute takes the element out of flow and positions it based on the first parent that is not static. If no such parent exists, it uses the whole page.
 
 **HTML**
 ```html
@@ -89,7 +89,7 @@ Absolute pulls the element out of the normal flow and positions it relative to t
 ---
 
 ## 4. `fixed`
-Fixed elements stay attached to the browser window. Scrolling the page does not move them.
+Fixed sticks to the browser window, so scrolling does not move it.
 
 **HTML**
 ```html
@@ -124,7 +124,7 @@ Fixed elements stay attached to the browser window. Scrolling the page does not 
 ---
 
 ## 5. `sticky`
-Sticky starts like relative but sticks to a position once you scroll past a threshold. It needs a `top` (or bottom/left/right) value and enough space in the parent container.
+Sticky behaves like relative till you scroll. After the scroll reaches the `top` (or other) value, it sticks there inside its parent box.
 
 **HTML**
 ```html
@@ -159,7 +159,7 @@ Sticky starts like relative but sticks to a position once you scroll past a thre
 ---
 
 ## Practice Tips
-- Copy each HTML snippet into the `<body>` of a test page and add the CSS to `style.css`.
-- Tweak the colors, sizes, and offsets to see how layout shifts.
-- Use browser dev tools (right-click → Inspect) to visualize the boxes and understand how positioning contexts work.
+- Copy each HTML snippet inside `<body>` and add the CSS into your stylesheet.
+- Change colors, sizes, and offsets to see how the layout moves.
+- Right-click → Inspect to see boxes and understand which parent controls the position.
 
