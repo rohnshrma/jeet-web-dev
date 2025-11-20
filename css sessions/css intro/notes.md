@@ -175,3 +175,48 @@ p {
   line-height: 1.15;
 }
 ```
+
+---
+
+## Layout & Background Cheat Notes
+
+The following notes break down each block from the example CSS so you can quickly recall what every property controls.
+
+### Global Reset `* { ... }`
+
+- `padding`, `margin`: Set to `0` to eliminate default spacing and gain precise control over layout.
+- `box-sizing: border-box`: Forces elements to include borders and padding inside their declared width/height, making sizing math easier.
+
+### Heading Stack `h1`–`h6`
+
+- `margin-bottom: 16px`: Adds consistent spacing after every heading level.
+- `font-family: Arial, Helvetica, sans-serif`: Provides a readable sans-serif stack with fallbacks.
+
+### Paragraphs `p`
+
+- `margin-bottom: 16px`: Keeps paragraphs evenly spaced.
+- `font-family: sans-serif`: Uses the browser’s default sans-serif face.
+- `font-size: 18px`: Improves readability with a larger base size.
+
+### Main Container `#main`
+
+- `color: #fff`: Sets default text color for everything inside `#main`.
+- `background: linear-gradient(coral, teal)`: Applies a smooth vertical gradient.
+- `padding: 64px 128px`: Adds generous inner spacing (top/bottom 64px, left/right 128px).
+- `margin: 50px`: Pushes the card away from the viewport edges.
+- `border: 2px solid #fff`: Frames the container with a subtle outline.
+- `border-radius: 30px`: Softens the container corners.
+- `box-shadow: 0 0 10px 0 black`: Adds depth by casting a diffuse shadow.
+- `background-image: linear-gradient(...), url(...)`: Layers a translucent black gradient over a hero image for contrast.
+- `background-repeat: no-repeat`, `background-size: cover`, `background-position: center`: Ensures the background photo fills the box, stays centered, and doesn’t tile.
+
+> **Box model shortcuts**: The commented padding/margin variations show shorthand patterns—single value (all sides), double (top/bottom, left/right), triple (top, left/right, bottom), and quadruple (top, right, bottom, left).
+
+### Call-to-Action Links `#main a`
+
+- `background-color: #fff`, `color: #333`: Invert colors to create a punchy button.
+- `text-decoration: none`: Removes the default underline.
+- `font-family: sans-serif`: Matches the paragraph typeface.
+- `padding: 12px 14px`: Adds click-friendly touch target sizing.
+- `border-radius: 5px`: Slightly rounds button corners.
+- `display: inline-block`: Allows padding and margin to behave like a block while keeping the link in flow.
