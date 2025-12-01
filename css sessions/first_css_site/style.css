@@ -1,20 +1,27 @@
+/* Imports Google Fonts: Dancing Script (handwritten style) and Montserrat (modern sans-serif) */
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* 
+   - Dancing Script: variable weight from 400 to 700
+   - Montserrat: supports normal (0) and italic (1), weights 100–900
+   - &display=swap: improves performance by showing fallback font while custom fonts load
+*/
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+  padding: 0; /* Removes default padding from ALL elements */
+  margin: 0; /* Removes default margin from ALL elements */
+  box-sizing: border-box; /* Changes box model so padding & border are included in width/height */
 }
+/* This is a "CSS reset" – ensures consistent starting point across browsers */
 
 p {
-  line-height: 1.5;
-  font-family: sans-serif;
-  color: grey;
-  margin-bottom: 1rem;
+  line-height: 1.5; /* Increases space between lines for better readability (1.5 × font size) */
+  font-family: sans-serif; /* Fallback font if Montserrat fails to load */
+  color: grey; /* Text color for paragraphs */
+  margin-bottom: 1rem; /* Adds space below each paragraph (1rem = 16px by default) */
 }
 
 h1 {
-  font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script", cursive; /* Uses the beautiful handwritten Google Font for main title */
 }
 
 h2,
@@ -22,75 +29,85 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 1rem;
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  margin-bottom: 1rem; /* Space below all headings */
+  font-family: Montserrat, Arial, Helvetica, sans-serif; /* Modern, clean font stack with fallbacks */
 }
+/* Group selector – applies same rules to multiple heading levels */
 
 .a-btn {
-  background-color: #4a70a9;
-  color: #fff;
-  padding: 0.8rem 1rem;
-  display: inline-block;
-  text-decoration: none;
+  background-color: #4a70a9; /* Button background – a nice blue */
+  color: #fff; /* White text */
+  padding: 0.8rem 1rem; /* Inner space: top/bottom 0.8rem, left/right 1rem */
+  display: inline-block; /* Allows padding & width on an <a> tag (which is inline by default) */
+  text-decoration: none; /* Removes underline from link */
   font-family: Montserrat, Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  box-shadow: -2px 2px 0 #000;
+  font-weight: 600; /* Semi-bold text */
+  box-shadow: -2px 2px 0 #000; /* Creates a "hand-drawn" black offset shadow (retro/brutalist style) */
 }
 
 .a-btn:hover {
-  transition: 0.3s;
-  padding: 0.8rem 2rem;
-  box-shadow: -4px 4px 0 #000;
+  transition: 0.3s; /* Smooth animation over 0.3 seconds when hovering */
+  padding: 0.8rem 2rem; /* On hover, button gets wider (more right/left padding) */
+  box-shadow: -4px 4px 0 #000; /* Shadow becomes larger – makes button feel like it's "lifting" */
 }
+/* Note: transition should ideally be on the base .a-btn for smoother effect (see best practice below) */
 
 .container {
-  padding: 4rem 10rem;
-  text-align: center;
+  padding: 4rem 10rem; /* Large padding: 4rem top/bottom, 10rem left/right → centers content with big margins */
+  text-align: center; /* Centers all text inside .container */
 }
 
-/* 1rem = 16px */
+/* Helpful comment in the code explaining rem units */
+/* 1rem = 16px (by default, unless root font-size is changed) */
+
 .level-2 {
-  font-size: 2.5rem;
-  color: #4a70a9;
-  text-shadow: -2px 2px 0 #000000;
+  font-size: 2.5rem; /* ~40px – used for secondary headings */
+  color: #4a70a9; /* Same blue as button */
+  text-shadow: -2px 2px 0 #000000; /* Black offset shadow behind text – gives 3D/hand-drawn look */
 }
+
 .level-3 {
-  font-size: 1.8rem;
+  font-size: 1.8rem; /* ~28.8px */
   color: #4a70a9;
-  text-shadow: -1.2px 1.2px 0 #000000;
+  text-shadow: -1.2px 1.2px 0 #000000; /* Smaller shadow for smaller text */
 }
+
 #about {
-  background: #efece3;
+  background: #efece3; /* Light beige background for About section */
 }
+
 #about:hover img {
-  box-shadow: 0 0 4px grey;
-  transition: 0.3s;
+  box-shadow: 0 0 4px grey; /* Subtle glow around image when hovering the whole section */
+  transition: 0.3s; /* Smooth appearance of shadow */
 }
 
 #about img {
   width: 200px;
   height: 200px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+  border-radius: 50%; /* Makes image perfectly circular */
+  margin-bottom: 1rem; /* Space below the profile picture */
 }
 
 #footer {
-  color: #fff;
-  background-color: #8fabd4;
+  color: #fff; /* White text */
+  background-color: #8fabd4; /* Light blue footer background */
 }
+
 #footer a {
-  margin: 0.5rem;
+  margin: 0.5rem; /* Space around each social icon link */
   color: #fff;
-  font-size: 1.5rem;
-  text-shadow: -2px 2px 0 #000;
+  font-size: 1.5rem; /* Larger icons */
+  text-shadow: -2px 2px 0 #000; /* Same hand-drawn shadow style */
   text-decoration: none;
 }
+
 #footer p {
-  color: #fff;
+  color: #fff; /* Override default grey from global p rule */
   margin-top: 1rem;
 }
 
 #footer a:hover i {
-  transform: scale(1.2);
-  transition: 0.3s;
+  transform: scale(1.2); /* Icon grows 20% on hover */
+  transition: 0.3s; /* Smooth grow effect */
 }
+/* Targets Font Awesome (or similar) <i> tags inside footer links */
