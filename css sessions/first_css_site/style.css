@@ -72,6 +72,41 @@ h6 {
   text-shadow: -1.2px 1.2px 0 #000000; /* Smaller shadow for smaller text */
 }
 
+#header {
+  position: relative;
+  color: #fff;
+  padding-top: 4rem;
+  text-align: center;
+  background-color: #8fabd4;
+}
+
+#header .cloud {
+  filter: drop-shadow(-4px 0px 0 orange);
+  width: 300px;
+}
+#header .c2 {
+  position: relative;
+  left: 400px;
+}
+#header h2 {
+  font-weight: 600;
+  font-size: 2.5rem;
+  text-shadow: -2px 2px 0 orange;
+}
+#header .c1 {
+  position: absolute;
+  bottom: 300px;
+  left: 200px;
+}
+#header .mountain {
+  filter: drop-shadow(-4px 0px 0 orange);
+  width: 800px;
+}
+#header h1 {
+  text-shadow: -2px 2px 0 orange;
+  font-size: 5rem;
+}
+
 #about {
   background: #efece3; /* Light beige background for About section */
 }
@@ -86,6 +121,31 @@ h6 {
   height: 200px;
   border-radius: 50%; /* Makes image perfectly circular */
   margin-bottom: 1rem; /* Space below the profile picture */
+}
+
+#courses {
+  display: flex;
+  justify-content: space-between;
+}
+
+#courses .col {
+  border: 0.5px solid grey;
+  border-radius: 10px;
+  padding: 2rem;
+  width: 30%;
+}
+#courses .col:hover {
+  box-shadow: 0 0 4px grey;
+  transform: scale(1.005);
+  transition: 0.3s ease-in-out;
+}
+#courses .col p {
+  margin: 0;
+}
+#courses .col i {
+  font-size: 5rem;
+  color: #4a70a9;
+  margin-bottom: 2rem;
 }
 
 #footer {

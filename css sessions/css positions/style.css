@@ -3,37 +3,36 @@
   margin: 0;
   box-sizing: border-box;
 }
+#parent {
+  background-color: black;
+  height: 500px;
+  width: 500px;
+  /* responsible for making .b2 move within the parent div */
+  position: relative;
+}
 
 .box {
   height: 100px;
   width: 100px;
 }
 
-/* relative */
-/* element moves from its orignal position, towards other direction */
-/* remains part of document flow */
+/* absolute (not fixed) */
+/* element moves in relation to the view port (by default),
+ but can be changed so that it moves in relation to parent (by giving the parent any position) */
+/* doesn't remains part of document flow */
 
 .b1 {
   background-color: thistle;
-  position: relative;
-  left: 300px;
-  top: 200px;
 }
 .b2 {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
   background-color: cadetblue;
-  position: relative;
-  left: 200px;
-  top: 200px;
 }
 .b3 {
   background-color: skyblue;
-  position: relative;
-  bottom: 200px;
-  left: 300px;
 }
 .b4 {
-  position: relative;
-  bottom: 200px;
-  left: 200px;
   background-color: cornflowerblue;
 }
