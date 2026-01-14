@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  text-align: center;
+  padding: 4rem 8rem;
+}
+#downloads {
+  background-color: cornflowerblue;
+}
+
+#features .col i {
+  font-size: 4rem;
+  color: coral;
+  margin-bottom: 1rem;
+}
