@@ -20,6 +20,50 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="header">
+      <!-- navbar -->
+      <nav class="navi navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">tindog</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- main -->
+
+      <div id="main" class="row">
+        <div class="col content-bx">
+          <h1>Meet new and interesting dogs nearby.</h1>
+          <button class="btn btn-dark mr-3 btn-lg">DOWNLOAD</button>
+          <button class="btn btn-outline-light btn-lg">DOWNLOAD</button>
+        </div>
+        <div class="col image-bx">
+          <img src="https://tindog-pro.netlify.app/iphone6.png" alt="iphone6" />
+        </div>
+      </div>
+    </div>
+
     <div id="features" class="row wrapper">
       <div class="col">
         <i class="fa-regular fa-star"></i>
@@ -38,12 +82,56 @@
       </div>
     </div>
 
-    <div id="downloads" class="text-light wrapper">
-      <h2 class="display-4 mb-4">
-        Find the True Love of Your Dog's Life Today.
-      </h2>
-      <button class="btn btn-dark mr-3">DOWNLOAD</button>
-      <button class="btn btn-light">DOWNLOAD</button>
+    <!-- reviews -->
+    <div id="reviews">
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2>
+              I no longer have to sniff other dogs for love. I've found the
+              hottest Corgi on DogGram. Woof.
+            </h2>
+            <img
+              src="https://tindog-pro.netlify.app/dog-img.jpg"
+              alt="pebbles"
+            />
+            <span>Pebbles, New York</span>
+          </div>
+          <div class="carousel-item">
+            <h2>
+              My dog used to be so lonely, but with DogGram's help, they've
+              found the love of their life. I think.
+            </h2>
+            <img
+              src="https://tindog-pro.netlify.app/lady-img.jpg"
+              alt="Beverly"
+            />
+            <span>Beverly, Illinois</span>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleControls"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
     </div>
 
     <div id="pricing" class="wrapper">
@@ -88,5 +176,25 @@
         </div>
       </div>
     </div>
+
+    <div id="downloads" class="text-light wrapper">
+      <h2 class="display-4 mb-4">
+        Find the True Love of Your Dog's Life Today.
+      </h2>
+      <button class="btn btn-dark mr-3">DOWNLOAD</button>
+      <button class="btn btn-light">DOWNLOAD</button>
+    </div>
+
+    <!-- bs js -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
